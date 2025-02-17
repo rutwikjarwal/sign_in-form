@@ -1,0 +1,424 @@
+/* style.css */
+
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #5e57b7;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 450px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-box {
+    padding: 40px;
+    height: 500px;
+    position: relative;/* style.css */
+
+    :root {
+        --primary-color: #6c63ff;
+        --secondary-color: #5e57b7;
+        --text-color: #333;
+        --bg-color: #f9f9f9;
+        --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        width: 450px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .container:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .form-box {
+        padding: 40px;
+        position: relative;
+    }
+    
+    .header-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .header-text h2 {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .header-text p {
+        color: var(--text-color);
+        font-size: 14px;
+        opacity: 0.8;
+    }
+    
+    .button-box {
+        width: 250px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px rgba(108, 99, 255, 0.2);
+        border-radius: 30px;
+    }
+    
+    .toggle-btn {
+        padding: 12px 35px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--text-color);
+        transition: color 0.3s;
+    }
+    
+    .toggle-btn:hover {
+        color: var(--primary-color);
+    }
+    
+    .toggle-btn.active {
+        color: white;  /* Style for the active toggle button */
+    }
+    
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 125px;
+        height: 100%;
+        background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        border-radius: 30px;
+        transition: .5s;
+    }
+    
+    .social-icons {
+        margin: 30px auto;
+        text-align: center;
+    }
+    
+    .social-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 8px;
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--text-color);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .social-icon:hover {
+        background-color: var(--primary-color);
+        transform: translateY(-3px);
+    }
+    
+    .input-group {
+        top: 230px;
+        position: absolute;
+        width: 330px;
+        transition: .5s;
+        z-index: 2;
+        display: grid;  /* Enable Grid Layout */
+        grid-template-columns: 1fr;  /* Single Column by default */
+        grid-gap: 15px;  /* Spacing between rows */
+    }
+    
+    .input-field {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 0; /* Remove default margins on input fields */
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        outline: none;
+        background: var(--bg-color);
+        color: var(--text-color);
+        transition: border-color 0.3s;
+    }
+    
+    .input-field:focus {
+        border-color: var(--primary-color);
+    }
+    
+    .checkbox-container {
+        display: flex;          /* Use flexbox for checkbox and label */
+        align-items: center;    /* Vertically align items */
+        justify-content: flex-start; /*Align items to the start*/
+    }
+    
+    .check-box {
+        margin: 0;         /*Reset default checkbox margins */
+        margin-right: 8px;  /*Add spacing between checkbox and label*/
+    }
+    
+    .submit-btn {
+        width: 85%;
+        padding: 14px 35px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto; /*Adjust the margin to zero, and apply auto to the sides */
+        background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .submit-btn:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+    
+    /* Style for the "funny" mouse hover */
+    .submit-btn:hover {
+        cursor: url('mouse-pointer.png'), auto;
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #login {
+        left: 50px;
+        z-index: 1;
+    }
+    
+    #register {
+        left: 450px;
+        z-index: 1;
+    }
+    
+    /* Style the links  - Forgot Password and Terms */
+    .forgot-password, .terms-link{
+        text-decoration: none;   /*Remove underlines*/
+        color: var(--text-color);
+        font-size: 13px;        /* Match the span size */
+        opacity: 0.7;           /*Match the span color */
+        transition: color 0.3s; /*Add a smooth hover effect */
+    }
+    
+    .forgot-password:hover, .terms-link:hover{
+       color: var(--primary-color);  /* Change on hover*/
+    }
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-text h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    color: var(--text-color);
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.button-box {
+    width: 250px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.2);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 12px 35px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.toggle-btn:hover {
+    color: var(--primary-color);
+}
+
+.toggle-btn.active {
+    color: white;  /* Style for the active toggle button */
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 125px;
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    text-decoration: none;
+    color: #fff;
+    /* background-color: var(--text-color); */
+    /* transition: background-color 0.3s, transform 0.3s; */
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.input-group {
+    top: 230px;
+    position: absolute;
+    width: 330px;
+    transition: .5s;
+    z-index: 2; /* ADDED: Ensures input groups are in front */
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: var(--primary-color);
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 14px 35px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Style for the "funny" mouse hover */
+.submit-btn:hover {
+    cursor: url('mouse-pointer.png'), auto;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.check-box {
+    margin: 20px 10px 24px 0;
+}
+
+span {
+    color: var(--text-color);
+    font-size: 13px;
+    position: relative;
+    bottom: 2px;
+    opacity: 0.7;
+}
+
+#login {
+    left: 50px;
+    z-index: 1; /* ADDED: Ensures login form is in front */
+}
+
+#register {
+    left: 450px;
+    z-index: 1; /* ADDED: Ensures register form is in front */
+}
+
+/* style.css (Additions) */
+
+/* Existing CSS Code ... */
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--text-color);  /* Or any color you prefer */
+    opacity: 0.7;             /* For a subtle look */
+}
+
+/* If using a logo image */
+.logo {
+    max-width: 100px;       /* Adjust as needed */
+    height: auto;
+    vertical-align: middle; /* Align logo with text */
+    margin-right: 5px;       /* Add spacing */
+}
